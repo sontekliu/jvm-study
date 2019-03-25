@@ -13,3 +13,4 @@ classes/
 bin/
 catalina*
 logs/
+target/
