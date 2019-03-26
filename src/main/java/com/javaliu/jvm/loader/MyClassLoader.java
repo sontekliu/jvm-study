@@ -3,9 +3,9 @@ package com.javaliu.jvm.loader;
 public class MyClassLoader {
     public static void main(String[] args) {
         // 对于静态字段来说，只有直接定义了该字段的类才会被初始化
-        System.out.println(Child1.str);
+        System.out.println(MyChild1.str);
         // 当一个类在初始化时，要求其父类必须全部初始化
-        System.out.println(Child1.str2);
+        System.out.println(MyChild1.str2);
     }
 }
 
@@ -17,7 +17,7 @@ class Parent1{
     }
 }
 
-class Child1 extends Parent1{
+class MyChild1 extends Parent1{
     public static String str2 = "welcome";
 
     static {
